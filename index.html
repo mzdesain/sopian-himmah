@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sopian & Himmah</title>
 
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://sopian-himmah.vercel.app/">
-<meta property="og:title" content="Undangan Pernikahan Sopian & Himmah">
-<meta property="og:description" content="Dengan ridho Allah Ta'ala, kami mengundang Anda dalam pernikahan kami">
-<meta property="og:image" content="https://sopian-himmah.vercel.app/gambar.jpeg">
-<meta property="og:image:secure_url" content="https://sopian-himmah.vercel.app/gambar.jpeg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sopian-himmah.vercel.app/">
+    <meta property="og:title" content="Undangan Pernikahan Sopian & Himmah">
+    <meta property="og:description" content="Dengan ridho Allah Ta'ala, kami mengundang Anda dalam pernikahan kami">
+    <meta property="og:image" content="https://sopian-himmah.vercel.app/gambar.jpeg">
+    <meta property="og:image:secure_url" content="https://sopian-himmah.vercel.app/gambar.jpeg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://sopian-himmah.vercel.app/">
-<meta property="twitter:title" content="Undangan Pernikahan Sopian & Himmah">
-<meta property="twitter:description" content="Dengan ridho Allah Ta'ala, kami mengundang Anda dalam pernikahan kami">
-<meta property="twitter:image" content="https://sopian-himmah.vercel.app/gambar.jpeg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sopian-himmah.vercel.app/">
+    <meta property="twitter:title" content="Undangan Pernikahan Sopian & Himmah">
+    <meta property="twitter:description"
+        content="Dengan ridho Allah Ta'ala, kami mengundang Anda dalam pernikahan kami">
+    <meta property="twitter:image" content="https://sopian-himmah.vercel.app/gambar.jpeg">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -68,10 +69,29 @@
             opacity: 0.6;
         }
 
-        .top-left { top: 0; left: 0; transform: rotate(0deg); }
-        .top-right { top: 0; right: 0; transform: rotate(90deg); }
-        .bottom-left { bottom: 0; left: 0; transform: rotate(-90deg); }
-        .bottom-right { bottom: 0; right: 0; transform: rotate(180deg); }
+        .top-left {
+            top: 0;
+            left: 0;
+            transform: rotate(0deg);
+        }
+
+        .top-right {
+            top: 0;
+            right: 0;
+            transform: rotate(90deg);
+        }
+
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+            transform: rotate(-90deg);
+        }
+
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+        }
 
         .main-container {
             max-width: 500px;
@@ -79,7 +99,7 @@
             position: relative;
             background: var(--off-white);
             min-height: 100vh;
-            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
         }
 
         .music-control {
@@ -102,7 +122,11 @@
             transition: all 0.3s ease;
         }
 
-        @media (max-width: 500px) { .music-control { right: 15px; } }
+        @media (max-width: 500px) {
+            .music-control {
+                right: 15px;
+            }
+        }
 
         .music-control.active {
             animation: musicPulse 2s infinite;
@@ -111,9 +135,17 @@
         }
 
         @keyframes musicPulse {
-            0% { box-shadow: 0 0 0 0 rgba(44, 85, 48, 0.4); }
-            70% { box-shadow: 0 0 0 10px rgba(44, 85, 48, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(44, 85, 48, 0); }
+            0% {
+                box-shadow: 0 0 0 0 rgba(44, 85, 48, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(44, 85, 48, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(44, 85, 48, 0);
+            }
         }
 
         .hero-section {
@@ -197,7 +229,7 @@
             z-index: 2;
             letter-spacing: 1px;
             transition: 0.3s;
-            box-shadow: 0 4px 15px rgba(44,85,48,0.2);
+            box-shadow: 0 4px 15px rgba(44, 85, 48, 0.2);
         }
 
         .content-section {
@@ -299,7 +331,9 @@
             font-weight: 600;
         }
 
-        .form-input, .form-textarea, .form-select {
+        .form-input,
+        .form-textarea,
+        .form-select {
             border: 1px solid var(--accent-light);
             border-radius: 0;
             background: var(--off-white);
@@ -319,7 +353,10 @@
             transition: 0.3s;
         }
 
-        .form-submit:disabled { background: #ccc; cursor: not-allowed; }
+        .form-submit:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
 
         .message-item {
             background: var(--white);
@@ -343,11 +380,31 @@
             display: none;
         }
 
-        .nav-menu.visible { display: block; }
-        .nav-items { display: grid; grid-template-columns: repeat(6, 1fr); }
-        .nav-item { text-decoration: none; color: var(--gray); font-size: 0.6rem; text-align: center; }
-        .nav-item.active { color: var(--primary); }
-        .nav-icon { font-size: 1.1rem; display: block; margin-bottom: 2px; }
+        .nav-menu.visible {
+            display: block;
+        }
+
+        .nav-items {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: var(--gray);
+            font-size: 0.6rem;
+            text-align: center;
+        }
+
+        .nav-item.active {
+            color: var(--primary);
+        }
+
+        .nav-icon {
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 2px;
+        }
 
         .back-to-top {
             position: fixed;
@@ -365,12 +422,19 @@
             z-index: 999;
         }
 
-        @media (max-width: 500px) { .back-to-top { right: 15px; } }
+        @media (max-width: 500px) {
+            .back-to-top {
+                right: 15px;
+            }
+        }
 
         .modal-overlay {
             position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.6);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
             display: none;
             justify-content: center;
             align-items: center;
@@ -389,8 +453,15 @@
         }
 
         @keyframes modalPop {
-            from { transform: scale(0.8); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
         }
 
         .modal-icon {
@@ -406,7 +477,11 @@
             margin-bottom: 0.5rem;
         }
 
-        .modal-text { font-size: 0.9rem; color: var(--gray); margin-bottom: 1.5rem; }
+        .modal-text {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+        }
 
         .modal-close-btn {
             background: var(--primary);
@@ -419,8 +494,13 @@
             cursor: pointer;
         }
 
-        .main-content { display: none; }
-        .main-content.visible { display: block; }
+        .main-content {
+            display: none;
+        }
+
+        .main-content.visible {
+            display: block;
+        }
 
         /* --- STYLE FOOTER PROMOSI (MENONJOL & ANIMASI) --- */
         .footer {
@@ -447,9 +527,17 @@
         }
 
         @keyframes pulse-animation {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
         .promo-link {
@@ -461,10 +549,20 @@
             border-bottom: 1px solid var(--accent-light);
         }
 
-        .animate-in { animation: slideUp 1s ease forwards; }
+        .animate-in {
+            animation: slideUp 1s ease forwards;
+        }
+
         @keyframes slideUp {
-            from { opacity: 0; transform: translateY(40px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -472,21 +570,28 @@
 <body>
     <svg style="display:none">
         <symbol id="flower" viewBox="0 0 100 100">
-            <path fill="currentColor" d="M50 50c0-15 10-25 25-25s25 10 25 25-10 25-25 25-25-10-25-25z" opacity=".2"/>
-            <path fill="currentColor" d="M50 50c-15 0-25-10-25-25s10-25 25-25 25 10 25 25-10 25-25 25z" opacity=".3"/>
-            <path fill="currentColor" d="M50 50c0 15-10 25-25 25s-25-10-25-25 10-25 25-25 25 10 25 25z" opacity=".2"/>
-            <path fill="currentColor" d="M50 50c15 0 25 10 25 25s-10 25-25 25-25-10-25-25 10-25 25-25z" opacity=".3"/>
-            <circle cx="50" cy="50" r="10" fill="currentColor"/>
+            <path fill="currentColor" d="M50 50c0-15 10-25 25-25s25 10 25 25-10 25-25 25-25-10-25-25z" opacity=".2" />
+            <path fill="currentColor" d="M50 50c-15 0-25-10-25-25s10-25 25-25 25 10 25 25-10 25-25 25z" opacity=".3" />
+            <path fill="currentColor" d="M50 50c0 15-10 25-25 25s-25-10-25-25 10-25 25-25 25 10 25 25z" opacity=".2" />
+            <path fill="currentColor" d="M50 50c15 0 25 10 25 25s-10 25-25 25-25-10-25-25 10-25 25-25z" opacity=".3" />
+            <circle cx="50" cy="50" r="10" fill="currentColor" />
         </symbol>
     </svg>
 
     <div class="modal-overlay" id="successModal">
         <div class="modal-content">
-            <div class="floral-decor top-left" style="width:80px; height:80px; color: var(--accent-light)"><svg width="100%" height="100%"><use xlink:href="#flower"/></svg></div>
-            <div class="floral-decor bottom-right" style="width:80px; height:80px; color: var(--accent-light)"><svg width="100%" height="100%"><use xlink:href="#flower"/></svg></div>
+            <div class="floral-decor top-left" style="width:80px; height:80px; color: var(--accent-light)"><svg
+                    width="100%" height="100%">
+                    <use xlink:href="#flower" />
+                </svg></div>
+            <div class="floral-decor bottom-right" style="width:80px; height:80px; color: var(--accent-light)"><svg
+                    width="100%" height="100%">
+                    <use xlink:href="#flower" />
+                </svg></div>
             <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
             <h3 class="modal-title">Terima Kasih</h3>
-            <p class="modal-text">Ucapan dan doa restu Anda telah kami terima. Semoga keberkahan juga menyertai Anda.</p>
+            <p class="modal-text">Ucapan dan doa restu Anda telah kami terima. Semoga keberkahan juga menyertai Anda.
+            </p>
             <button class="modal-close-btn" onclick="closeModal()">Tutup</button>
         </div>
     </div>
@@ -505,10 +610,15 @@
 
     <div class="main-container">
         <section class="hero-section" id="heroSection">
-            <div class="floral-decor top-left" style="color: var(--accent-light)"><svg width="100%" height="100%"><use xlink:href="#flower"/></svg></div>
-            <div class="floral-decor bottom-right" style="color: var(--accent-light)"><svg width="100%" height="100%"><use xlink:href="#flower"/></svg></div>
+            <div class="floral-decor top-left" style="color: var(--accent-light)"><svg width="100%" height="100%">
+                    <use xlink:href="#flower" />
+                </svg></div>
+            <div class="floral-decor bottom-right" style="color: var(--accent-light)"><svg width="100%" height="100%">
+                    <use xlink:href="#flower" />
+                </svg></div>
             <div class="bismillah">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</div>
-            <p style="font-size: 0.75rem; letter-spacing: 2px; color: var(--accent); text-transform: uppercase;">Undangan Pernikahan</p>
+            <p style="font-size: 0.75rem; letter-spacing: 2px; color: var(--accent); text-transform: uppercase;">
+                Undangan Pernikahan</p>
             <h1 class="couple-names">Sopian <br>& Himmah</h1>
             <div class="wedding-date">26 . 03 . 2026</div>
             <div class="guest-info" id="guestInfo">
@@ -522,21 +632,28 @@
 
         <div class="main-content" id="mainContent">
             <section class="content-section" id="coupleSection">
-                <div class="floral-decor top-right" style="color: #eee"><svg width="100%" height="100%"><use xlink:href="#flower"/></svg></div>
+                <div class="floral-decor top-right" style="color: #eee"><svg width="100%" height="100%">
+                        <use xlink:href="#flower" />
+                    </svg></div>
                 <div class="section-header">
                     <p class="section-desc">Mempelai</p>
                     <h2 class="section-title">Pasangan Berbahagia</h2>
-                    
+
                     <div style="max-width: 400px; margin: 1.5rem auto 0; padding: 0 1rem;">
-                        <p style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 0.9rem; color: var(--primary); margin-bottom: 1rem;">
-                            "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang."
+                        <p
+                            style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 0.9rem; color: var(--primary); margin-bottom: 1rem;">
+                            "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari
+                            jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya
+                            diantaramu rasa kasih dan sayang."
                         </p>
-                        <p style="font-size: 0.75rem; color: var(--accent); font-weight: 600; text-transform: uppercase; margin-bottom: 1.5rem;">
+                        <p
+                            style="font-size: 0.75rem; color: var(--accent); font-weight: 600; text-transform: uppercase; margin-bottom: 1.5rem;">
                             (QS. Ar-Rum: 21)
                         </p>
                         <p style="font-size: 0.85rem; color: var(--gray); line-height: 1.8;">
                             Assalamu'alaikum Warahmatullahi Wabarakatuh. <br>
-                            Dengan memohon rahmat dan ridho Allah Ta'ala, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan putra-putri kami:
+                            Dengan memohon rahmat dan ridho Allah Ta'ala, kami bermaksud mengundang Bapak/Ibu/Saudara/i
+                            untuk menghadiri acara pernikahan putra-putri kami:
                         </p>
                     </div>
                 </div>
@@ -545,13 +662,15 @@
                     <div class="profile-avatar">S</div>
                     <h3 class="profile-name">Sopian</h3>
                     <p class="profile-fullname">SOPIAN ATSAURI</p>
-                    <p style="font-size: 0.8rem; color: var(--gray);">Anak Pertama dari <br> <b>Bapak Salpudin & Ibu Rapi'in</b></p>
+                    <p style="font-size: 0.8rem; color: var(--gray);">Anak Pertama dari <br> <b>Bapak Salpudin & Ibu
+                            Rapi'in</b></p>
                 </div>
                 <div class="card">
                     <div class="profile-avatar">H</div>
                     <h3 class="profile-name">Himmah</h3>
                     <p class="profile-fullname">HIMMAH MUJAHIDAH NASUTION</p>
-                    <p style="font-size: 0.8rem; color: var(--gray);">Anak Pertama dari <br> <b>Bapak Herman Nasution & Ibu Rugaya Ritonga</b></p>
+                    <p style="font-size: 0.8rem; color: var(--gray);">Anak Pertama dari <br> <b>Bapak Herman Nasution &
+                            Ibu Rugaya Ritonga</b></p>
                 </div>
             </section>
 
@@ -566,8 +685,10 @@
                     <p style="font-weight: 600; color: var(--primary);">Kamis, 26 Maret 2026</p>
                     <p style="font-size: 0.85rem;">Pukul 07.00 WITA - Selesai</p>
                     <hr style="margin: 1.5rem auto; width: 50px; border: 0; border-top: 1px solid var(--accent);">
-                    <p style="font-size: 0.85rem; color: var(--gray); margin-bottom: 1.5rem;">Di Kediaman Mempelai Wanita (Desa Simatorkis, Kec. Dolok, Kab. Padang Lawas Utara, Sumatera Utara)</p>
-                    <a href="https://maps.app.goo.gl/3uYG2VyxbJ8xfHox8?g_st=aw" target="_blank" class="open-invitation" style="padding: 0.6rem 1.5rem; text-decoration: none; font-size: 0.75rem;">Petunjuk Lokasi</a>
+                    <p style="font-size: 0.85rem; color: var(--gray); margin-bottom: 1.5rem;">Di Kediaman Mempelai
+                        Wanita (Desa Simatorkis, Kec. Dolok, Kab. Padang Lawas Utara, Sumatera Utara)</p>
+                    <a href="https://maps.app.goo.gl/3uYG2VyxbJ8xfHox8?g_st=aw" target="_blank" class="open-invitation"
+                        style="padding: 0.6rem 1.5rem; text-decoration: none; font-size: 0.75rem;">Petunjuk Lokasi</a>
                 </div>
                 <div class="card" id="receptionSection">
                     <div class="love-icon"><i class="fas fa-utensils"></i></div>
@@ -575,8 +696,10 @@
                     <p style="font-weight: 600; color: var(--primary);">Kamis, 26 Maret 2026</p>
                     <p style="font-size: 0.85rem;">Pukul 09.00 WITA - Selesai</p>
                     <hr style="margin: 1.5rem auto; width: 50px; border: 0; border-top: 1px solid var(--accent);">
-                    <p style="font-size: 0.85rem; color: var(--gray); margin-bottom: 1.5rem;">Di Kediaman Mempelai Wanita (Desa Simatorkis, Kec. Dolok, Kab. Padang Lawas Utara, Sumatera Utara)</p>
-                    <a href="https://maps.app.goo.gl/3uYG2VyxbJ8xfHox8?g_st=aw" target="_blank" class="open-invitation" style="padding: 0.6rem 1.5rem; text-decoration: none; font-size: 0.75rem;">Petunjuk Lokasi</a>
+                    <p style="font-size: 0.85rem; color: var(--gray); margin-bottom: 1.5rem;">Di Kediaman Mempelai
+                        Wanita (Desa Simatorkis, Kec. Dolok, Kab. Padang Lawas Utara, Sumatera Utara)</p>
+                    <a href="https://maps.app.goo.gl/3uYG2VyxbJ8xfHox8?g_st=aw" target="_blank" class="open-invitation"
+                        style="padding: 0.6rem 1.5rem; text-decoration: none; font-size: 0.75rem;">Petunjuk Lokasi</a>
                 </div>
             </section>
 
@@ -585,10 +708,14 @@
                     <p class="section-desc">Menuju Hari Bahagia</p>
                 </div>
                 <div class="countdown-wrapper">
-                    <div class="countdown-item"><span class="countdown-value" id="countDays">0</span><span class="countdown-label">Hari</span></div>
-                    <div class="countdown-item"><span class="countdown-value" id="countHours">0</span><span class="countdown-label">Jam</span></div>
-                    <div class="countdown-item"><span class="countdown-value" id="countMinutes">0</span><span class="countdown-label">Menit</span></div>
-                    <div class="countdown-item"><span class="countdown-value" id="countSeconds">0</span><span class="countdown-label">Detik</span></div>
+                    <div class="countdown-item"><span class="countdown-value" id="countDays">0</span><span
+                            class="countdown-label">Hari</span></div>
+                    <div class="countdown-item"><span class="countdown-value" id="countHours">0</span><span
+                            class="countdown-label">Jam</span></div>
+                    <div class="countdown-item"><span class="countdown-value" id="countMinutes">0</span><span
+                            class="countdown-label">Menit</span></div>
+                    <div class="countdown-item"><span class="countdown-value" id="countSeconds">0</span><span
+                            class="countdown-label">Detik</span></div>
                 </div>
             </section>
 
@@ -599,15 +726,19 @@
                 </div>
                 <div class="card">
                     <form id="rsvpForm" onsubmit="handleRSVP(event)">
-                        <input type="text" class="form-input" id="rsvpName" placeholder="Nama Lengkap" style="padding: 12px;" required>
-                        <textarea class="form-textarea" id="rsvpMessage" placeholder="Tulis ucapan..." style="height: 100px; padding: 12px;"></textarea>
+                        <input type="text" class="form-input" id="rsvpName" placeholder="Nama Lengkap"
+                            style="padding: 12px;" required>
+                        <textarea class="form-textarea" id="rsvpMessage" placeholder="Tulis ucapan..."
+                            style="height: 100px; padding: 12px;"></textarea>
                         <select class="form-select" id="rsvpAttendance" style="padding: 12px;" required>
                             <option value="">Konfirmasi Kehadiran</option>
                             <option value="Hadir">Hadir</option>
                             <option value="Tidak Hadir">Tidak Hadir</option>
                         </select>
-                        <input type="number" class="form-input" id="rsvpGuests" min="1" max="5" value="1" style="padding: 12px; margin-bottom: 1.5rem;">
-                        <button type="submit" class="form-submit" id="submitBtn" style="width: 100%; padding: 15px;">Kirim Ucapan</button>
+                        <input type="number" class="form-input" id="rsvpGuests" min="1" max="5" value="1"
+                            style="padding: 12px; margin-bottom: 1.5rem;">
+                        <button type="submit" class="form-submit" id="submitBtn"
+                            style="width: 100%; padding: 15px;">Kirim Ucapan</button>
                     </form>
                     <div class="messages-list" id="messagesList" style="margin-top: 2rem;">
                         <p style="font-size: 0.8rem; color: #aaa;">Memuat ucapan...</p>
@@ -621,51 +752,74 @@
                     <h2 class="section-title">Kirim Hadiah</h2>
                 </div>
                 <div class="card">
-                    <div style="background: var(--off-white); border: 1px solid var(--accent-light); padding: 2rem 1rem;">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bank_Syariah_Indonesia.svg/1280px-Bank_Syariah_Indonesia.svg.png" alt="BSI" style="height: 30px; margin-bottom: 1rem;">
-                        <div style="font-family: 'Playfair Display'; font-size: 1.4rem; letter-spacing: 2px; margin-bottom: 0.5rem;" id="bankAccount">7233068076</div>
+                    <div
+                        style="background: var(--off-white); border: 1px solid var(--accent-light); padding: 2rem 1rem;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bank_Syariah_Indonesia.svg/1280px-Bank_Syariah_Indonesia.svg.png"
+                            alt="BSI" style="height: 30px; margin-bottom: 1rem;">
+                        <div style="font-family: 'Playfair Display'; font-size: 1.4rem; letter-spacing: 2px; margin-bottom: 0.5rem;"
+                            id="bankAccount">7233068076</div>
                         <p style="font-size: 0.8rem; text-transform: uppercase;">a.n Sopian Atsaori</p>
-                        <button onclick="copyBankAccount()" style="margin-top: 1.5rem; background: none; border: 1px solid var(--accent); color: var(--accent); padding: 5px 15px; cursor: pointer; font-size: 0.7rem;">SALIN REKENING</button>
+                        <button onclick="copyBankAccount()"
+                            style="margin-top: 1.5rem; background: none; border: 1px solid var(--accent); color: var(--accent); padding: 5px 15px; cursor: pointer; font-size: 0.7rem;">SALIN
+                            REKENING</button>
                     </div>
                 </div>
 
-            <section class="content-section" id="giftSection">
-                <div class="card">
-                <div class="section-header">
-                    <h2 class="section-title">Keluarga Besar</h2>
-                </div>
-                    <div style="margin-bottom: 1.5rem;">
-                    <p>Bapak Salpudin & Ibu Rapi'in</p>
-                    <p>Bapak Herman Nasution & Ibu Rugaya Ritonga</p>
-                </div>
-                </div>
-
-
-            </section>
-
-            <footer class="footer">
-                <div class="promo-container">
-                    <p style="font-size: 0.8rem; opacity: 0.9; letter-spacing: 0.5px;">
-                        Mau dibuatin undangan digital? 
+                <div style="text-align: center; padding: 2rem 1.5rem; background: var(--off-white);">
+                    <div
+                        style="font-family: 'Amiri', serif; font-size: 1.8rem; color: var(--primary); line-height: 1.6; margin-bottom: 1rem;">
+                        بَارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِيْ خَيْرٍ
+                    </div>
+                    <p
+                        style="font-size: 0.85rem; color: var(--gray); font-style: italic; font-family: 'Inter', sans-serif;">
+                        "Semoga Allah memberkahimu di waktu bahagia dan memberkahimu di waktu susah, serta semoga Allah
+                        menyatukan kalian berdua dalam kebaikan."
                     </p>
-                    <a href="https://www.instagram.com/muzanni.uce/" target="_blank" class="promo-link">
-                       Klik 👉🏻 @muzanni.uce
-                    </a>
+                    <div style="width: 50px; height: 1px; background: var(--accent); margin: 1.5rem auto;"></div>
                 </div>
-                
-                <p style="opacity: 0.4; font-size: 0.65rem; margin-top: 2rem;">© 2026 Mz Desain | Design by Muzanni</p>
-            </footer>
+
+                <section class="content-section" id="giftSection">
+                    <div class="card">
+                        <div class="section-header">
+                            <h2 class="section-title">Keluarga Besar</h2>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <p>Bapak Salpudin & Ibu Rapi'in</p>
+                            <p>Bapak Herman Nasution & Ibu Rugaya Ritonga</p>
+                        </div>
+                    </div>
+                </section>
+
+                <footer class="footer">
+                    <div class="promo-container">
+                        <p style="font-size: 0.8rem; opacity: 0.9; letter-spacing: 0.5px;">
+                            Mau dibuatin undangan digital?
+                        </p>
+                        <a href="https://www.instagram.com/muzanni.uce/" target="_blank" class="promo-link">
+                            Klik 👉🏻 @muzanni.uce
+                        </a>
+                    </div>
+
+                    <p style="opacity: 0.4; font-size: 0.65rem; margin-top: 2rem;">© 2026 Mz Desain | Design by Muzanni
+                    </p>
+                </footer>
         </div>
     </div>
 
     <nav class="nav-menu" id="navMenu">
         <div class="nav-items">
-            <a href="#coupleSection" class="nav-item" onclick="navigateToSection('coupleSection')"><span class="nav-icon"><i class="fas fa-heart"></i></span>Mempelai</a>
-            <a href="#akadSection" class="nav-item" onclick="navigateToSection('akadSection')"><span class="nav-icon"><i class="fas fa-ring"></i></span>Akad</a>
-            <a href="#receptionSection" class="nav-item" onclick="navigateToSection('receptionSection')"><span class="nav-icon"><i class="fas fa-utensils"></i></span>Resepsi</a>
-            <a href="#countdownSection" class="nav-item" onclick="navigateToSection('countdownSection')"><span class="nav-icon"><i class="fas fa-clock"></i></span>Waktu</a>
-            <a href="#rsvpSection" class="nav-item" onclick="navigateToSection('rsvpSection')"><span class="nav-icon"><i class="fas fa-envelope"></i></span>RSVP</a>
-            <a href="#giftSection" class="nav-item" onclick="navigateToSection('giftSection')"><span class="nav-icon"><i class="fas fa-gift"></i></span>Hadiah</a>
+            <a href="#coupleSection" class="nav-item" onclick="navigateToSection('coupleSection')"><span
+                    class="nav-icon"><i class="fas fa-heart"></i></span>Mempelai</a>
+            <a href="#akadSection" class="nav-item" onclick="navigateToSection('akadSection')"><span class="nav-icon"><i
+                        class="fas fa-ring"></i></span>Akad</a>
+            <a href="#receptionSection" class="nav-item" onclick="navigateToSection('receptionSection')"><span
+                    class="nav-icon"><i class="fas fa-utensils"></i></span>Resepsi</a>
+            <a href="#countdownSection" class="nav-item" onclick="navigateToSection('countdownSection')"><span
+                    class="nav-icon"><i class="fas fa-clock"></i></span>Waktu</a>
+            <a href="#rsvpSection" class="nav-item" onclick="navigateToSection('rsvpSection')"><span class="nav-icon"><i
+                        class="fas fa-envelope"></i></span>RSVP</a>
+            <a href="#giftSection" class="nav-item" onclick="navigateToSection('giftSection')"><span class="nav-icon"><i
+                        class="fas fa-gift"></i></span>Hadiah</a>
         </div>
     </nav>
 
@@ -809,8 +963,3 @@
 </body>
 
 </html>
-
-
-
-
-
