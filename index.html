@@ -220,6 +220,11 @@
             
             <div style="letter-spacing: 3px; font-weight: 600; color: var(--primary-dark); font-size: 1.1rem; margin-top: 5px;">26 . 03 . 2026</div>
             
+            <div id="guestInfo" style="margin: 2rem 0; color: var(--primary-dark);">
+    <p style="font-size: 0.75rem; opacity: 0.8; letter-spacing: 1px;">KEPADA YTH.</p>
+    <b id="guestNameDisplay" style="font-size: 1.4rem; font-family: 'Playfair Display'; display: block; margin-top: 5px;">Tamu Undangan</b>
+</div>
+            
             <button class="btn-premium" onclick="startInvitation()">Buka Undangan</button>
             <img src="bunga.png" class="floral-decor bottom-right">
         </section>
@@ -434,9 +439,21 @@
             alert('Nomor rekening berhasil disalin!');
         }
 
-        document.addEventListener('DOMContentLoaded', startCountdownTimer);
-        const guest = new URLSearchParams(window.location.search).get('to');
-        if (guest) document.querySelector('#guestInfo b').textContent = decodeURIComponent(guest);
+        document.addEventListener('DOMContentLoaded', () => {
+    startCountdownTimer();
+    
+    // Ambil nama dari parameter URL ?to=
+    const urlParams = new URLSearchParams(window.location.search);
+    const guest = urlParams.get('to');
+    
+    if (guest) {
+        // Pastikan ID atau selector-nya sesuai dengan yang ada di HTML antum
+        const guestElement = document.querySelector('#guestInfo b') || document.getElementById('guestNameDisplay');
+        if (guestElement) {
+            guestElement.textContent = decodeURIComponent(guest);
+        }
+    }
+});
     </script>
 </body>
 
